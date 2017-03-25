@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RevMob.MonoGame.SharedProject", "RevMob.MonoGame.SharedProject.shproj", "{E19410DA-29BF-4D1E-815A-093300B1A646}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevMob.MonoGame.Android", "..\RevMob.MonoGame.Android\RevMob.MonoGame.Android.csproj", "{A5AFC8F8-D768-470F-9BB8-1F5993298F87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevMob.MonoGame.iOS", "..\RevMob.MonoGame.iOS\RevMob.MonoGame.iOS.csproj", "{FF23D65B-596E-4693-B93A-AFFB1B9AE019}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		RevMob.MonoGame.SharedProject.projitems*{a5afc8f8-d768-470f-9bb8-1f5993298f87}*SharedItemsImports = 4
+		RevMob.MonoGame.SharedProject.projitems*{e19410da-29bf-4d1e-815a-093300b1a646}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5AFC8F8-D768-470F-9BB8-1F5993298F87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5AFC8F8-D768-470F-9BB8-1F5993298F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5AFC8F8-D768-470F-9BB8-1F5993298F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5AFC8F8-D768-470F-9BB8-1F5993298F87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF23D65B-596E-4693-B93A-AFFB1B9AE019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF23D65B-596E-4693-B93A-AFFB1B9AE019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF23D65B-596E-4693-B93A-AFFB1B9AE019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF23D65B-596E-4693-B93A-AFFB1B9AE019}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
