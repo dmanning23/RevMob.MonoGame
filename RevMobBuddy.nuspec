@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>RevMobBuddy</id>
+		<version>1.0.0</version>
+		<title>RevMobBuddy</title>
+		<authors>dmanning23</authors>
+		<owners>dmanning23</owners>
+		<projectUrl>https://github.com/dmanning23/RevMobBuddy</projectUrl>
+		<licenseUrl>https://github.com/dmanning23/RevMobBuddy/blob/master/LICENSE.txt</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>RevMob integration for MonoGame.Android and MonoGame.iOS</description>
+		<releaseNotes />
+		<copyright>Copyright 2016</copyright>
+		<tags>pcl, android, ios, monogame, revmob</tags>
+		<dependencies>
+
+			<!--Xamarin.Android-->
+			<group targetFramework="MonoAndroid10">
+				<dependency id="MonoGame.Framework.Android" version="3.5"/>
+				<dependency id="FilenameBuddy" version="1.0.1"/>
+				<dependency id="InputHelper" version="1.0.1"/>
+				<dependency id="StateMachineBuddy" version="1.0"/>
+				<dependency id="FontBuddy" version="1.0.8"/>
+				<dependency id="GameTimer" version="1.0"/>
+				<dependency id="HadoukInput" version="1.0"/>
+				<dependency id="MatrixExtensions" version="1.0"/>
+				<dependency id="MenuBuddy" version="1.0"/>
+				<dependency id="MouseBuddy" version="1.0"/>
+				<dependency id="PrimitiveBuddy" version="1.0"/>
+				<dependency id="RandomExtensions.dmanning23" version="1.0"/>
+				<dependency id="ResolutionBuddy" version="1.0"/>
+				<dependency id="TouchScreenBuddy" version="1.0"/>
+				<dependency id="Vector2Extensions" version="1.0.1"/>
+				<dependency id="XmlBuddy" version="1.0"/>
+			</group>
+
+			<!--Xamarin.iOS Unified-->
+			<group targetFramework="Xamarin.iOS10">
+				<dependency id="MonoGame.Framework.iOS" version="3.5"/>
+				<dependency id="FilenameBuddy" version="1.0.1"/>
+				<dependency id="InputHelper" version="1.0.1"/>
+				<dependency id="StateMachineBuddy" version="1.0"/>
+				<dependency id="FontBuddy" version="1.0.8"/>
+				<dependency id="GameTimer" version="1.0"/>
+				<dependency id="HadoukInput" version="1.0"/>
+				<dependency id="MatrixExtensions" version="1.0"/>
+				<dependency id="MenuBuddy" version="1.0"/>
+				<dependency id="MouseBuddy" version="1.0"/>
+				<dependency id="PrimitiveBuddy" version="1.0"/>
+				<dependency id="RandomExtensions.dmanning23" version="1.0"/>
+				<dependency id="ResolutionBuddy" version="1.0"/>
+				<dependency id="TouchScreenBuddy" version="1.0"/>
+				<dependency id="Vector2Extensions" version="1.0.1"/>
+				<dependency id="XmlBuddy" version="1.0"/>
+			</group>
+
+		</dependencies>
+	</metadata>
+	<files>
+
+		<!--Xamarin.Android-->
+		<file src="RevMob.MonoGame.Android\bin\Release\RevMobBuddy.Android.pdb" target="lib\MonoAndroid10\RevMobBuddy.Android.pdb" />
+		<file src="RevMob.MonoGame.Android\bin\Release\RevMobBuddy.Android.dll" target="lib\MonoAndroid10\RevMobBuddy.Android.dll" />
+
+		<!--Xamarin.iOS Unified-->
+		<file src="RevMob.MonoGame.iOS\bin\Release\RevMobBuddy.iOS.pdb" target="lib\Xamarin.iOS10\RevMobBuddy.iOS.pdb" />
+		<file src="RevMob.MonoGame.iOS\bin\Release\RevMobBuddy.iOS.dll" target="lib\Xamarin.iOS10\RevMobBuddy.iOS.dll" />
+
+	</files>
+</package>

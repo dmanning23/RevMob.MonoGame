@@ -9,6 +9,12 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RevMobBuddy.SharedProject",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevMobBuddy.iOS", "RevMob.MonoGame.iOS\RevMobBuddy.iOS.csproj", "{FF23D65B-596E-4693-B93A-AFFB1B9AE019}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6F5A9127-0E40-4F6A-B8DD-A3A62940A831}"
+	ProjectSection(SolutionItems) = preProject
+		buildNugetPackages.ps1 = buildNugetPackages.ps1
+		RevMobBuddy.nuspec = RevMobBuddy.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		RevMob.MonoGame.SharedProject\RevMob.MonoGame.SharedProject.projitems*{a5afc8f8-d768-470f-9bb8-1f5993298f87}*SharedItemsImports = 4

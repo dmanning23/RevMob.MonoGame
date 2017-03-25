@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("RevMobBuddy.Resource", IsApplication=false)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("RevMobBuddy.Android.Resource", IsApplication=false)]
 
-namespace RevMobBuddy
+namespace RevMobBuddy.Android
 {
 	
 	
