@@ -5,7 +5,7 @@ namespace RevMobBuddy
 {
 	public interface IAdManager
 	{
-		void Initialize();
+		void Initialize(string apiKey);
 
 		void ShowBannerAd();
 

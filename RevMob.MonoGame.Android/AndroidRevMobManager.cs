@@ -57,9 +57,9 @@ namespace RevMobBuddy.Android
 			openaLoadedLinkListener = new LoadedLinkOpenedListener();
 		}
 
-		public void Initialize()
+		public void Initialize(string apiKey)
 		{
-			RevMob.StartWithListener(Game.Activity, startSessionListener, "5695f1c559163ac94e52394c");
+			RevMob.StartWithListener(Game.Activity, startSessionListener, apiKey);
 		}
 
 		protected void VideoReward(object obj, EventArgs e)

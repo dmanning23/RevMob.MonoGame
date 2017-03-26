@@ -19,11 +19,11 @@ namespace RevMobBuddy.iOS
 
 		#region Methods
 
-		public void Initialize()
+		public void Initialize(string apiKey)
 		{
 			Action<NSError> actionError = revmobSessionDidNotStartWithError;
 			Action action = revmobSessionDidStart;
-			RevMobAds.StartSessionWithAppID("5695efd659163ac94e52393e", action, actionError);
+			RevMobAds.StartSessionWithAppID(apiKey, action, actionError);
 		}
 
 		public void DisplayInterstitialAd()
