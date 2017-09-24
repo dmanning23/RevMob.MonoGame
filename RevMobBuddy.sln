@@ -3,23 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevMobBuddy.Android", "RevMob.MonoGame.Android\RevMobBuddy.Android.csproj", "{A5AFC8F8-D768-470F-9BB8-1F5993298F87}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RevMobBuddy.SharedProject", "RevMob.MonoGame.SharedProject\RevMobBuddy.SharedProject.shproj", "{E19410DA-29BF-4D1E-815A-093300B1A646}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevMobBuddy.iOS", "RevMob.MonoGame.iOS\RevMobBuddy.iOS.csproj", "{FF23D65B-596E-4693-B93A-AFFB1B9AE019}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6F5A9127-0E40-4F6A-B8DD-A3A62940A831}"
 	ProjectSection(SolutionItems) = preProject
 		buildNugetPackages.ps1 = buildNugetPackages.ps1
 		RevMobBuddy.nuspec = RevMobBuddy.nuspec
 	EndProjectSection
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RevMobBuddy.SharedProject", "RevMobBuddy.SharedProject\RevMobBuddy.SharedProject.shproj", "{E19410DA-29BF-4D1E-815A-093300B1A646}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevMobBuddy.Android", "RevMobBuddy.Android\RevMobBuddy.Android.csproj", "{A5AFC8F8-D768-470F-9BB8-1F5993298F87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevMobBuddy.DesktopGL", "RevMobBuddy.DesktopGL\RevMobBuddy.DesktopGL.csproj", "{F02751F5-B9B5-4AE4-ACDC-3911A3AFEF53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevMobBuddy.iOS", "RevMobBuddy.iOS\RevMobBuddy.iOS.csproj", "{FF23D65B-596E-4693-B93A-AFFB1B9AE019}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		RevMob.MonoGame.SharedProject\RevMob.MonoGame.SharedProject.projitems*{a5afc8f8-d768-470f-9bb8-1f5993298f87}*SharedItemsImports = 4
-		RevMob.MonoGame.SharedProject\RevMob.MonoGame.SharedProject.projitems*{e19410da-29bf-4d1e-815a-093300b1a646}*SharedItemsImports = 13
-		RevMob.MonoGame.SharedProject\RevMob.MonoGame.SharedProject.projitems*{ff23d65b-596e-4693-b93a-affb1b9ae019}*SharedItemsImports = 4
+		RevMobBuddy.SharedProject\RevMobBuddy.SharedProject.projitems*{a5afc8f8-d768-470f-9bb8-1f5993298f87}*SharedItemsImports = 4
+		RevMobBuddy.SharedProject\RevMobBuddy.SharedProject.projitems*{e19410da-29bf-4d1e-815a-093300b1a646}*SharedItemsImports = 13
+		RevMobBuddy.SharedProject\RevMobBuddy.SharedProject.projitems*{f02751f5-b9b5-4ae4-acdc-3911a3afef53}*SharedItemsImports = 4
+		RevMobBuddy.SharedProject\RevMobBuddy.SharedProject.projitems*{ff23d65b-596e-4693-b93a-affb1b9ae019}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +33,10 @@ Global
 		{A5AFC8F8-D768-470F-9BB8-1F5993298F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5AFC8F8-D768-470F-9BB8-1F5993298F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5AFC8F8-D768-470F-9BB8-1F5993298F87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F02751F5-B9B5-4AE4-ACDC-3911A3AFEF53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02751F5-B9B5-4AE4-ACDC-3911A3AFEF53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02751F5-B9B5-4AE4-ACDC-3911A3AFEF53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02751F5-B9B5-4AE4-ACDC-3911A3AFEF53}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FF23D65B-596E-4693-B93A-AFFB1B9AE019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FF23D65B-596E-4693-B93A-AFFB1B9AE019}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF23D65B-596E-4693-B93A-AFFB1B9AE019}.Release|Any CPU.ActiveCfg = Release|Any CPU

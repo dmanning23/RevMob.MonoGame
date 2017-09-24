@@ -53,6 +53,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <Import Project="..\RevMob.MonoGame.SharedProject\RevMob.MonoGame.SharedProject.projitems" Label="Shared" />
+  <Import Project="..\RevMobBuddy.SharedProject\RevMobBuddy.SharedProject.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
