@@ -13,7 +13,7 @@ namespace RevMobBuddy.Android
 	{
 		#region Properties
 
-		public event EventHandler OnVideoReward;
+		public event EventHandler<RewardedVideoEventArgs> OnVideoReward;
 
 		Game _game;
 
@@ -62,11 +62,11 @@ namespace RevMobBuddy.Android
 			RevMob.StartWithListener(Game.Activity, startSessionListener, apiKey);
 		}
 
-		protected void VideoReward(object obj, EventArgs e)
+		protected void VideoReward(object obj, RewardedVideoEventArgs e)
 		{
 			if (null != OnVideoReward)
 			{
-				OnVideoReward(this, new EventArgs());
+				OnVideoReward(obj, e);
 			}
 		}
 

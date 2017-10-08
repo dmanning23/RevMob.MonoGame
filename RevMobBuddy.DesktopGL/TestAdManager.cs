@@ -1,15 +1,10 @@
-﻿using RevMobBuddy;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
-namespace ReMobBuddy.DesktopGL
+namespace RevMobBuddy.DesktopGL
 {
 	public class TestAdManager : IAdManager
 	{
-		public event EventHandler OnVideoReward;
+		public event EventHandler<RewardedVideoEventArgs> OnVideoReward;
 
 		public virtual void DisplayInterstitialAd()
 		{
@@ -21,6 +16,7 @@ namespace ReMobBuddy.DesktopGL
 
 		public virtual void DisplayVideoAd()
 		{
+			VideoReward(this, new RewardedVideoEventArgs(true));
 		}
 
 		public virtual void HideBannerAd()
@@ -35,11 +31,11 @@ namespace ReMobBuddy.DesktopGL
 		{
 		}
 
-		protected void VideoReward()
+		protected void VideoReward(object obj, RewardedVideoEventArgs e)
 		{
 			if (null != OnVideoReward)
 			{
-				OnVideoReward(this, new EventArgs());
+				OnVideoReward(obj, e);
 			}
 		}
 	}

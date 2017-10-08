@@ -16,6 +16,8 @@ https://github.com/dmanning23/RevMobBuddySample
 Extra instructions for use on Android:
 --------------------------------------
 
+Install the RevMob component from the Xamarin Component Store. The RevMobBuddy currently only works with version 9.2.2, so make sure that is the version you install.
+
 add line to manifest.xml: 
 ```
 <activity android:name="com.revmob.FullscreenActivity" android:theme="@android:style/Theme.Translucent" android:configChanges="keyboardHidden|orientation"></activity>
@@ -41,6 +43,8 @@ ads.Initialize();
 
 Extra instructions for use on iOS:
 ----------------------------------
+
+Install the RevMob component from the Xamarin Component Store. The RevMobBuddy currently only works with version 9.2.2, so make sure that is the version you install.
 
 add IAdManager service in Program.RunGame
 ```

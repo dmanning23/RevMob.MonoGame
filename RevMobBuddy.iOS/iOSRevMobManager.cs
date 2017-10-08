@@ -8,7 +8,7 @@ namespace RevMobBuddy.iOS
 	{
 		#region Properties
 
-		public event EventHandler OnVideoReward;
+		public event EventHandler<RewardedVideoEventArgs> OnVideoReward;
 
 		RevMobFullscreen loadfullscreen;
 		RevMobFullscreen video;
@@ -249,12 +249,20 @@ namespace RevMobBuddy.iOS
 		public void revmobRewardedVideoDidFailWithError(NSError error)
 		{
 			Console.WriteLine("revmobRewardedVideoDidFailWithError");
+			if (null != OnVideoReward)
+			{
+				OnVideoReward(this, new RewardedVideoEventArgs(false));
+			}
 		}
 
 		[Export("revmobRewardedVideoNotCompletelyLoaded:")]
 		public void revmobRewardedVideoNotCompletelyLoaded(String placementId)
 		{
 			Console.WriteLine("revmobRewardedVideoNotCompletelyLoaded");
+			if (null != OnVideoReward)
+			{
+				OnVideoReward(this, new RewardedVideoEventArgs(false));
+			}
 		}
 
 		[Export("revmobRewardedVideoDidStart:")]
@@ -269,7 +277,7 @@ namespace RevMobBuddy.iOS
 			Console.WriteLine("revmobRewardedVideoDidComplete");
 			if (null != OnVideoReward)
 			{
-				OnVideoReward(this, new EventArgs());
+				OnVideoReward(this, new RewardedVideoEventArgs(true));
 			}
 		}
 

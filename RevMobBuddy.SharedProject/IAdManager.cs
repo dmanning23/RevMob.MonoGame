@@ -17,6 +17,6 @@ namespace RevMobBuddy
 
 		void DisplayRewardedVideoAd();
 
-		event EventHandler OnVideoReward;
+		event EventHandler<RewardedVideoEventArgs> OnVideoReward;
 	}
 }

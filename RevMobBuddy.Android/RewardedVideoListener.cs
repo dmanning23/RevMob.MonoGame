@@ -7,7 +7,7 @@ namespace RevMobBuddy.Android
 	internal class RewardedVideoListener : BaseRevMobListener
 	{
 		public event EventHandler OnVideoLoaded;
-		public event EventHandler OnVideoReward;
+		public event EventHandler<RewardedVideoEventArgs> OnVideoReward;
 
 		public RewardedVideoListener()
 		{
@@ -33,20 +33,26 @@ namespace RevMobBuddy.Android
 			Console.WriteLine("Rewarded Video completed.");
 			if (null != OnVideoReward)
 			{
-				OnVideoReward(this, new EventArgs());
+				OnVideoReward(this, new RewardedVideoEventArgs(true));
 			}
 		}
 
 		public override void OnRevMobRewardedVideoNotCompletelyLoaded()
 		{
 			Console.WriteLine("Rewarded Video not completely loaded.");
+			if (null != OnVideoReward)
+			{
+				OnVideoReward(this, new RewardedVideoEventArgs(false));
+			}
 		}
 
 		public override void OnRevMobAdNotReceived(String error)
 		{
 			Console.WriteLine("Rewarded Video failed to load.");
+			if (null != OnVideoReward)
+			{
+				OnVideoReward(this, new RewardedVideoEventArgs(false));
+			}
 		}
-
-		
 	}
 }
