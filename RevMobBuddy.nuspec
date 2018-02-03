@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>RevMobBuddy</id>
-		<version>1.0.6</version>
+		<version>1.0.7</version>
 		<title>RevMobBuddy</title>
 		<authors>dmanning23</authors>
 		<owners>dmanning23</owners>
@@ -26,7 +26,7 @@
 			</group>
 
       <group targetFramework="net451">
-        <dependency id="MonoGame.Framework.DesktopGL" version="3.5"/>
+        <dependency id="MonoGame.Framework.WindowsDX" version="3.5"/>
       </group>
 
 		</dependencies>
@@ -41,9 +41,9 @@
 		<file src="RevMobBuddy.iOS\bin\Release\RevMobBuddy.iOS.pdb" target="lib\Xamarin.iOS10\RevMobBuddy.iOS.pdb" />
 		<file src="RevMobBuddy.iOS\bin\Release\RevMobBuddy.iOS.dll" target="lib\Xamarin.iOS10\RevMobBuddy.iOS.dll" />
 
-    <!--DesktopGL-->
-    <file src="RevMobBuddy.DesktopGL\bin\Release\RevMobBuddy.DesktopGL.pdb" target="lib\net451\RevMobBuddy.DesktopGL.pdb" />
-    <file src="RevMobBuddy.DesktopGL\bin\Release\RevMobBuddy.DesktopGL.dll" target="lib\net451\RevMobBuddy.DesktopGL.dll" />
+    <!--WindowsDX-->
+    <file src="RevMobBuddy.WindowsDX\bin\Release\RevMobBuddy.WindowsDX.pdb" target="lib\net451\RevMobBuddy.WindowsDX.pdb" />
+    <file src="RevMobBuddy.WindowsDX\bin\Release\RevMobBuddy.WindowsDX.dll" target="lib\net451\RevMobBuddy.WindowsDX.dll" />
 
 	</files>
 </package>
