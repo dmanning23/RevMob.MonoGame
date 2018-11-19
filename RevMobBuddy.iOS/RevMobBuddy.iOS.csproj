@@ -35,7 +35,7 @@
       <HintPath>..\packages\MonoGame.Framework.iOS.3.6.0.1625\lib\XamariniOS\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="revmob.ios.xamarin">
-      <HintPath>..\Components\revmob-9.2.2\lib\ios-unified\revmob.ios.xamarin.dll</HintPath>
+      <HintPath>..\lib\ios-unified\revmob.ios.xamarin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>RevMobBuddy</id>
-		<version>1.0.7</version>
+		<version>1.0.8</version>
 		<title>RevMobBuddy</title>
 		<authors>dmanning23</authors>
 		<owners>dmanning23</owners>
@@ -25,9 +25,9 @@
 				<dependency id="MonoGame.Framework.iOS" version="3.5"/>
 			</group>
 
-      <group targetFramework="net451">
-        <dependency id="MonoGame.Framework.WindowsDX" version="3.5"/>
-      </group>
+			<group targetFramework="net451">
+				<dependency id="MonoGame.Framework.WindowsDX" version="3.5"/>
+			</group>
 
 		</dependencies>
 	</metadata>
@@ -36,14 +36,16 @@
 		<!--Xamarin.Android-->
 		<file src="RevMobBuddy.Android\bin\Release\RevMobBuddy.Android.pdb" target="lib\MonoAndroid10\RevMobBuddy.Android.pdb" />
 		<file src="RevMobBuddy.Android\bin\Release\RevMobBuddy.Android.dll" target="lib\MonoAndroid10\RevMobBuddy.Android.dll" />
+		<file src="lib\android\revmob.android.xamarin.dll" target="lib\MonoAndroid10\revmob.android.xamarin.dll" />
 
 		<!--Xamarin.iOS Unified-->
 		<file src="RevMobBuddy.iOS\bin\Release\RevMobBuddy.iOS.pdb" target="lib\Xamarin.iOS10\RevMobBuddy.iOS.pdb" />
 		<file src="RevMobBuddy.iOS\bin\Release\RevMobBuddy.iOS.dll" target="lib\Xamarin.iOS10\RevMobBuddy.iOS.dll" />
+		<file src="lib\ios-unified\revmob.ios.xamarin.dll" target="lib\Xamarin.iOS10\revmob.ios.xamarin.dll" />
 
-    <!--WindowsDX-->
-    <file src="RevMobBuddy.WindowsDX\bin\Release\RevMobBuddy.WindowsDX.pdb" target="lib\net451\RevMobBuddy.WindowsDX.pdb" />
-    <file src="RevMobBuddy.WindowsDX\bin\Release\RevMobBuddy.WindowsDX.dll" target="lib\net451\RevMobBuddy.WindowsDX.dll" />
+		<!--WindowsDX-->
+		<file src="RevMobBuddy.WindowsDX\bin\Release\RevMobBuddy.WindowsDX.pdb" target="lib\net451\RevMobBuddy.WindowsDX.pdb" />
+		<file src="RevMobBuddy.WindowsDX\bin\Release\RevMobBuddy.WindowsDX.dll" target="lib\net451\RevMobBuddy.WindowsDX.dll" />
 
 	</files>
 </package>
